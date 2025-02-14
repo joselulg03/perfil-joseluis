@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/perfil.jpg" type="image/jpeg">
+    <title>José Luis Leal García</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script defer src="js/bootstrap.bundle.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <!-- Botón para móviles -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#Nav"
+              aria-controls="Nav"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos de la barra de navegación -->
+            <div class="collapse navbar-collapse" id="Nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-semibold" href="#contacto"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-semibold" href="#habilidades"
+                    >Mis habilidades</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-semibold" href="#formacion"
+                    >Mi formación</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="px-4 py-5 my-5 text-center">
+          <img
+            class="rounded-circle"
+            src="img/perfil.jpg"
+            alt="Imagen de perfil de José Luis Leal García"
+            width="150"
+          />
+          <h1 class="fw-bold">José Luis Leal García</h1>
+
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              Estudiante de Ingeniería Informática en Sistemas de Información en
+              la Universidad Pablo de Olavide (Sevilla)
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 gap-3"
+                onclick="window.location.href = '#contacto';"
+              >
+                Contáctame
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+                onclick="window.location.href = '#habilidades';"
+              >
+                Mis habilidades
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main  -->
+      <main>
+        <!-- Sección de Contacto -->
+        <div class="container py-5" id="contacto">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="mb-4">Contáctame</h2>
+              <p class="lead">Aquí tienes mis datos de contacto:</p>
+              <ul class="list-unstyled">
+                <li>
+                  <strong>Teléfono:</strong>
+                  <a
+                    href="tel:+34671316234"
+                    class="text-decoration-none text-primary"
+                    >671 31 62 34</a
+                  >
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <a
+                    href="mailto:jlleagar@alu.upo.es"
+                    class="text-decoration-none text-primary"
+                    >jlleagar@alu.upo.es</a
+                  >
+                </li>
+                <li>
+                  <strong>Dirección:</strong>
+                  Avenida José Antonio Gallego Nº58, 41749, El Cuervo de
+                  Sevilla, España
+                </li>
+              </ul>
+
+              <hr />
+
+              <p class="lead">También puedes encontrarme en:</p>
+              <ul class="list-unstyled ms-3">
+                <li class="mb-3">
+                  <strong>GitHub:</strong>
+                  <a
+                    class="text-body-secondary"
+                    href="https://github.com/joselulg03"
+                    target="_blank"
+                  >
+                    <i class="bi bi-github" style="font-size: 24px"></i>
+                  </a>
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a
+                    class="text-body-secondary"
+                    href="https://www.linkedin.com/in/josé-luis-leal-garcía-648984220"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin" style="font-size: 24px"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-light p-4 rounded">
+                <h3 class="mb-4">Formulario de Contacto</h3>
+                <div
+                  id="formulario-enviado"
+                  class="alert alert-success d-none"
+                  role="alert"
+                >
+                  ¡El formulario ha sido enviado correctamente!
+                </div>
+                <form id="formulario-contacto">
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Sección de Habilidades -->
+        <div class="container py-5" id="habilidades">
+          <h2 class="mb-4 text-center">Mis Habilidades</h2>
+          <p class="lead text-center mb-5">
+            Durante mi formación, he adquirido conocimientos en los siguientes
+            campos:
+          </p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-laptop me-2"></i> Desarrollo Web
+                  </h5>
+                  <p class="card-text">
+                    He trabajado con tecnologías como HTML, CSS, JavaScript,
+                    React, Node.js y Bootstrap para crear aplicaciones web
+                    interactivas y funcionales.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-database"></i> Bases de Datos
+                  </h5>
+                  <p class="card-text">
+                    Experiencia en la creación y gestión de bases de datos con
+                    MySQL, incluyendo consultas, optimización y diseño de
+                    esquemas.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-filetype-ai"></i> Inteligencia Artificial
+                  </h5>
+                  <p class="card-text">
+                    Conocimientos en técnicas de Machine Learning, incluyendo
+                    clasificación, regresión, clustering y sistemas de
+                    recomendación.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-phone"></i> Desarrollo Móvil
+                  </h5>
+                  <p class="card-text">
+                    He trabajado en el desarrollo de aplicaciones móviles
+                    utilizando tecnologías como React Native y frameworks
+                    relacionados.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-code-slash"></i> Programación
+                  </h5>
+                  <p class="card-text">
+                    Experiencia en lenguajes como Python, JavaScript, C, Java y
+                    PHP, con enfoque en estructuras de datos y algoritmos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-kanban"></i> Gestión de Proyectos
+                  </h5>
+                  <p class="card-text">
+                    He desarrollado habilidades en la planificación, ejecución y
+                    seguimiento de proyectos usando herramientas ágiles como
+                    Scrum y Trello.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Mi Formación -->
+        <div class="container py-5" id="formacion">
+          <h2 class="mb-4 text-center">Mi Formación</h2>
+          <p class="lead text-center mb-5">
+            A lo largo de los cuatro años de mi formación en Ingeniería
+            Informática en Sistemas de Información, he tenido la oportunidad de
+            cursar las siguientes asignaturas:
+          </p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Asignatura</th>
+                <th scope="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td><strong>Fundamentos de Computadores</strong></td>
+                <td>Arquitectura de Von Neumann, lenguaje ensamblador, etc.</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><strong>Fundamentos de Programación</strong></td>
+                <td>
+                  Introducción a la programación, pseudocódigo, lenguaje C, etc.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><strong>Fundamentos Físicos de la Informática</strong></td>
+                <td>
+                  Electricidad y magnetismo, leyes de Kirchhoff, ondas
+                  electromagnéticas, componentes electrónicos, etc.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><strong>Sistemas Digitales</strong></td>
+                <td>
+                  Diseño y análisis de circuitos digitales con sistemas de
+                  numeración, álgebra de Boole, puertas lógicas, circuitos
+                  combinacionales y secuenciales.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><strong>Álgebra</strong></td>
+                <td>
+                  Estudio de matrices, sistemas de ecuaciones, espacios
+                  vectoriales y transformaciones lineales aplicadas a la
+                  informática.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td><strong>Cálculo</strong></td>
+                <td>
+                  Límites, derivadas, integrales y ecuaciones diferenciales
+                  aplicadas al análisis de funciones y modelado matemático.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td><strong>Programación Orientada a Objetos</strong></td>
+                <td>
+                  Principios de la programación orientada a objetos en Java:
+                  clases, herencia, polimorfismo, encapsulamiento y manejo de
+                  excepciones.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td><strong>Estadística</strong></td>
+                <td>
+                  Introducción a los principios básicos de la estadística,
+                  incluyendo probabilidad, distribuciones, inferencia
+                  estadística y técnicas de análisis de datos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td><strong>Métodos Matemáticos para la Ingeniería</strong></td>
+                <td>
+                  Aplicación de métodos matemáticos en problemas de ingeniería,
+                  centrado en ecuaciones diferenciales, álgebra lineal y
+                  transformadas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td><strong>Organización y Gestión de Empresas</strong></td>
+                <td>
+                  Estudio de la estructura organizacional, gestión de recursos
+                  humanos, marketing, finanzas y toma de decisiones dentro de
+                  las empresas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td><strong>Diseño de Bases de Datos</strong></td>
+                <td>
+                  Fundamentos en el diseño y modelado de bases de datos,
+                  incluyendo relaciones, normalización y consultas SQL.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td><strong>Ingeniería del Software I</strong></td>
+                <td>
+                  Introducción a la ingeniería del software, enfoques de
+                  desarrollo, metodologías, y herramientas para crear software
+                  de calidad.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td><strong>Fundamentos de Sistemas de Información</strong></td>
+                <td>
+                  Conceptos básicos sobre la creación, gestión y uso de sistemas
+                  de información en las organizaciones.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td><strong>Arquitectura de Bases de Datos</strong></td>
+                <td>
+                  Estudio de la arquitectura de bases de datos, incluyendo
+                  diseño físico, optimización de consultas y sistemas de bases
+                  de datos distribuidas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td><strong>Ingeniería del Software II</strong></td>
+                <td>
+                  Continuación de la asignatura de ingeniería de software,
+                  enfocado en el ciclo de vida del software y las fases de
+                  desarrollo avanzadas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td><strong>Sistemas Operativos</strong></td>
+                <td>
+                  Estudio de los sistemas operativos, sus principios, gestión de
+                  recursos y seguridad en la ejecución de programas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td><strong>Redes de Computadores</strong></td>
+                <td>
+                  Fundamentos sobre redes de comunicación, protocolos,
+                  topologías y seguridad en redes.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">18</th>
+                <td><strong>Algorítmica II</strong></td>
+                <td>
+                  Algoritmos avanzados, análisis de la complejidad computacional
+                  y su optimización en problemas de gran escala.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">19</th>
+                <td><strong>Algoritmica I</strong></td>
+                <td>
+                  Introducción a los algoritmos y estructuras de datos
+                  fundamentales, como listas, pilas, colas y árboles.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
+                <td><strong>Estructuras de Datos</strong></td>
+                <td>
+                  Estudio de estructuras de datos avanzadas como tablas hash,
+                  árboles binarios y grafos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">21</th>
+                <td><strong>Mantenimiento de Bases de Datos</strong></td>
+                <td>
+                  Técnicas y prácticas de mantenimiento, gestión de datos y
+                  optimización de bases de datos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">22</th>
+                <td><strong>Programación Avanzada</strong></td>
+                <td>
+                  Estudio de técnicas de programación avanzadas en diversos
+                  lenguajes y entornos de desarrollo.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">23</th>
+                <td><strong>Sistemas Distribuidos</strong></td>
+                <td>
+                  Principios y tecnologías detrás de los sistemas distribuidos,
+                  sincronización y comunicación entre nodos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">24</th>
+                <td><strong>Tecnologías de Sistemas de Información</strong></td>
+                <td>
+                  Exploración de tecnologías emergentes en el campo de los
+                  sistemas de información, incluyendo tecnologías web y móviles.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">25</th>
+                <td><strong>Gestión de Procesos de Negocios</strong></td>
+                <td>
+                  Modelado, gestión y optimización de los procesos empresariales
+                  y de negocios.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">26</th>
+                <td><strong>Integración de Tecnologías</strong></td>
+                <td>
+                  Enfoque sobre la integración de distintas tecnologías en un
+                  entorno empresarial, incluyendo sistemas ERP y CRM.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">27</th>
+                <td><strong>Ingeniería de Proyectos</strong></td>
+                <td>
+                  Principios y prácticas de la gestión de proyectos
+                  tecnológicos, con énfasis en planificación, presupuesto y
+                  riesgos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">28</th>
+                <td><strong>Seguridad</strong></td>
+                <td>
+                  Fundamentos de la seguridad informática, incluyendo
+                  criptografía, firewalls, y medidas de protección.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">29</th>
+                <td><strong>Sistemas de Información en Tiempo Real</strong></td>
+                <td>
+                  Estudio de sistemas que requieren procesamiento en tiempo
+                  real, como los sistemas embebidos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">30</th>
+                <td><strong>Bioinformática</strong></td>
+                <td>
+                  Aplicación de la informática y las tecnologías de la
+                  información en el campo de la biología y la medicina.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">31</th>
+                <td><strong>Inteligencia de Negocio</strong></td>
+                <td>
+                  Técnicas de análisis de datos para la toma de decisiones
+                  empresariales y estrategias basadas en datos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">32</th>
+                <td><strong>Planificación de Proyectos</strong></td>
+                <td>
+                  Enfoque sobre las técnicas y herramientas para planificar y
+                  gestionar proyectos tecnológicos de manera eficiente.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">33</th>
+                <td><strong>Calidad</strong></td>
+                <td>
+                  Estudio de los principios y normas de calidad en el desarrollo
+                  de software y en los sistemas de información.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">34</th>
+                <td><strong>Inteligencia Artificial</strong></td>
+                <td>
+                  Introducción a la inteligencia artificial, sus algoritmos y
+                  aplicaciones en la resolución de problemas complejos.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">35</th>
+                <td><strong>Gestión de Sistemas de Información</strong></td>
+                <td>
+                  Estrategias para gestionar eficazmente los sistemas de
+                  información dentro de las organizaciones.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">36</th>
+                <td><strong>Auditoría de Sistemas de Información</strong></td>
+                <td>
+                  Enfoque sobre la auditoría y control de los sistemas de
+                  información en una organización.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">37</th>
+                <td><strong>Tecnologías Avanzadas de Desarrollo</strong></td>
+                <td>
+                  Estudio de las últimas tecnologías y técnicas en el desarrollo
+                  de software avanzado.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">38</th>
+                <td><strong>Creación de Empresas</strong></td>
+                <td>
+                  Fundamentos sobre el emprendimiento y la creación de nuevas
+                  empresas tecnológicas.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">39</th>
+                <td><strong>Trabajo Fin de Grado</strong></td>
+                <td>
+                  Trabajo final de grado, que involucra la investigación y
+                  desarrollo de un proyecto integral relacionado con los temas
+                  estudiados a lo largo de la carrera.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-4 mx-4"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >&copy; <span id="year"></span> José Luis Leal García.</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://github.com/joselulg03"
+              target="_blank"
+            >
+              <i class="bi bi-github" style="font-size: 24px"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.linkedin.com/in/josé-luis-leal-garcía-648984220"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin" style="font-size: 24px"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+      <!-- Script para obtener el año actual -->
+      <script>
+        document.getElementById("year").textContent = new Intl.DateTimeFormat(
+          "es-ES",
+          { year: "numeric" }
+        ).format(new Date());
+      </script>
+
+      <!-- Botón para ir hacia arriba -->
+      <button
+        id="boton-arriba"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        class="btn btn-secondary position-fixed"
+        style="
+          bottom: 100px;
+          right: 20px;
+          padding: 10px 15px;
+          border-radius: 50%;
+          display: none;
+        "
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
+
+      <!-- Script para ir hacia arriba -->
+      <script>
+        window.onscroll = function () {
+          var button = document.getElementById("boton-arriba");
+          if (
+            document.body.scrollTop > 200 ||
+            document.documentElement.scrollTop > 200
+          ) {
+            button.style.display = "block";
+          } else {
+            button.style.display = "none";
+          }
+        };
+      </script>
+    </div>
+  </body>
+</html>
