@@ -2,6 +2,10 @@ h1 {
   margin: 0.5em 0;
 }
 
+h1, h2, h3, p, label {
+  color: var(--text-color);
+}
+
 body {
   transition: background-color 0.3s, color 0.3s;
 }
@@ -68,16 +72,12 @@ i, span {
   color: var(--background-color);
 }
 
-.card {
+.card, .modal-content {
   background-color: var(--card-background);
   border-color: var(--card-border);
 }
 
-.card-text, .card-title {
-  color: var(--text-color);
-}
-
-.table {
+.card-text, .card-title, .table {
   color: var(--text-color);
 }
 

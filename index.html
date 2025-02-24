@@ -81,7 +81,8 @@
               <button
                 type="button"
                 class="btn btn-primary btn-lg px-4 gap-3"
-                onclick="window.location.href = '#contacto';"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
               >
                 Contáctame
               </button>
@@ -166,7 +167,10 @@
                 >
                   ¡El formulario ha sido enviado correctamente!
                 </div>
-                <form id="formulario-contacto">
+                <form
+                  id="formulario-contacto"
+                  onsubmit="document.getElementById('formulario-enviado').classList.remove('d-none')"
+                >
                   <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input
@@ -196,6 +200,80 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="contactModal"
+          tabindex="-1"
+          aria-labelledby="contactModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">
+                  Formulario de Contacto
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Formulario de contacto -->
+                <div class="p-4 rounded">
+                  <div
+                    id="modal-formulario-enviado"
+                    class="alert alert-success d-none"
+                    role="alert"
+                  >
+                    ¡El formulario ha sido enviado correctamente!
+                  </div>
+                  <form
+                    id="modalForm"
+                    onsubmit="document.getElementById('modal-formulario-enviado').classList.remove('d-none')"
+                  >
+                    <div class="mb-3">
+                      <label for="modalNombre" class="form-label">Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="modalNombre"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="modalEmail" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="modalEmail"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="modalMensaje" class="form-label"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="modalMensaje"
+                        rows="4"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -673,14 +751,6 @@
         </ul>
       </footer>
 
-      <!-- Script para obtener el año actual -->
-      <script>
-        document.getElementById("year").textContent = new Intl.DateTimeFormat(
-          "es-ES",
-          { year: "numeric" }
-        ).format(new Date());
-      </script>
-
       <!-- Botón para ir hacia arriba -->
       <button
         id="boton-arriba"
@@ -697,47 +767,14 @@
         <i class="bi bi-arrow-up"></i>
       </button>
 
+      <!-- Script para obtener el año actual -->
+      <script defer src="js/year.js"></script>
+
       <!-- Script para ir hacia arriba -->
-      <script>
-        window.onscroll = function () {
-          let button = document.getElementById("boton-arriba");
-          if (
-            document.body.scrollTop > 200 ||
-            document.documentElement.scrollTop > 200
-          ) {
-            button.style.display = "block";
-          } else {
-            button.style.display = "none";
-          }
-        };
-      </script>
+      <script defer src="js/arriba.js"></script>
 
       <!-- Script para cambiar modo claro/oscuro-->
-      <script>
-        const button = document.getElementById("toggle-theme");
-        const sunIcon = document.getElementById("sun-icon");
-        const moonIcon = document.getElementById("moon-icon");
-
-        if (localStorage.getItem("theme") === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
-          sunIcon.classList.remove("d-none");
-          moonIcon.classList.add("d-none");
-        }
-
-        button.addEventListener("click", () => {
-          if (document.documentElement.getAttribute("data-theme") === "dark") {
-            document.documentElement.removeAttribute("data-theme");
-            localStorage.setItem("theme", "light");
-            sunIcon.classList.add("d-none");
-            moonIcon.classList.remove("d-none");
-          } else {
-            document.documentElement.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-            sunIcon.classList.remove("d-none");
-            moonIcon.classList.add("d-none");
-          }
-        });
-      </script>
+      <script defer src="js/theme.js"></script>
     </div>
   </body>
 </html>
