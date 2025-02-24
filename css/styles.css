@@ -49,8 +49,8 @@ i, span {
   color: var(--text-color);
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-color: var(--text-color);
+.navbar-light .navbar-toggler {
+  background-color: var(--secondary-color);
 }
 
 .btn-primary {
