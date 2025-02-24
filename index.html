@@ -52,6 +52,14 @@
                 </li>
               </ul>
             </div>
+            <button
+              id="toggle-theme"
+              class="btn btn-link m-3"
+              style="font-size: 24px; border: none; background: transparent"
+            >
+              <i class="bi bi-sun d-none" id="sun-icon"></i>
+              <i class="bi bi-moon" id="moon-icon"></i>
+            </button>
           </div>
         </nav>
 
@@ -149,7 +157,7 @@
             </div>
 
             <div class="col-md-6">
-              <div class="bg-light p-4 rounded">
+              <div class="p-4 rounded">
                 <h3 class="mb-4">Formulario de Contacto</h3>
                 <div
                   id="formulario-enviado"
@@ -639,9 +647,9 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-4 mx-4"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-body-secondary"
-            >&copy; <span id="year"></span> José Luis Leal García.</span
-          >
+          <span class="m-1">&copy;</span>
+          <span class="m-1" id="year"></span>
+          <span class="m-1">José Luis Leal García.</span>
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
@@ -692,7 +700,7 @@
       <!-- Script para ir hacia arriba -->
       <script>
         window.onscroll = function () {
-          var button = document.getElementById("boton-arriba");
+          let button = document.getElementById("boton-arriba");
           if (
             document.body.scrollTop > 200 ||
             document.documentElement.scrollTop > 200
@@ -702,6 +710,33 @@
             button.style.display = "none";
           }
         };
+      </script>
+
+      <!-- Script para cambiar modo claro/oscuro-->
+      <script>
+        const button = document.getElementById("toggle-theme");
+        const sunIcon = document.getElementById("sun-icon");
+        const moonIcon = document.getElementById("moon-icon");
+
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+          sunIcon.classList.remove("d-none");
+          moonIcon.classList.add("d-none");
+        }
+
+        button.addEventListener("click", () => {
+          if (document.documentElement.getAttribute("data-theme") === "dark") {
+            document.documentElement.removeAttribute("data-theme");
+            localStorage.setItem("theme", "light");
+            sunIcon.classList.add("d-none");
+            moonIcon.classList.remove("d-none");
+          } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+            sunIcon.classList.remove("d-none");
+            moonIcon.classList.add("d-none");
+          }
+        });
       </script>
     </div>
   </body>
