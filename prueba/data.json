@@ -1,0 +1,232 @@
+{
+    "habilidades": [
+      {
+        "titulo": "Desarrollo Web",
+        "icono": "bi bi-laptop",
+        "descripcion": "He trabajado con tecnologías como HTML, CSS, JavaScript, React, Node.js y Bootstrap para crear aplicaciones web interactivas y funcionales."
+      },
+      {
+        "titulo": "Bases de Datos",
+        "icono": "bi bi-database",
+        "descripcion": "Experiencia en la creación y gestión de bases de datos con MySQL, incluyendo consultas, optimización y diseño de esquemas."
+      },
+      {
+        "titulo": "Inteligencia Artificial",
+        "icono": "bi bi-filetype-ai",
+        "descripcion": "Conocimientos en técnicas de Machine Learning, incluyendo clasificación, regresión, clustering y sistemas de recomendación."
+      },
+      {
+        "titulo": "Desarrollo Móvil",
+        "icono": "bi bi-phone",
+        "descripcion": "He trabajado en el desarrollo de aplicaciones móviles utilizando tecnologías como React Native y frameworks relacionados."
+      },
+      {
+        "titulo": "Programación",
+        "icono": "bi bi-code-slash",
+        "descripcion": "Experiencia en lenguajes como Python, JavaScript, C, Java y PHP, con enfoque en estructuras de datos y algoritmos."
+      },
+      {
+        "titulo": "Gestión de Proyectos",
+        "icono": "bi bi-kanban",
+        "descripcion": "He desarrollado habilidades en la planificación, ejecución y seguimiento de proyectos usando herramientas ágiles como Scrum y Trello."
+      }
+    ],
+    "formacion": [
+      {
+        "numero": 1,
+        "asignatura": "Fundamentos de Computadores",
+        "descripcion": "Arquitectura de Von Neumann, lenguaje ensamblador, etc."
+      },
+      {
+        "numero": 2,
+        "asignatura": "Fundamentos de Programación",
+        "descripcion": "Introducción a la programación, pseudocódigo, lenguaje C, etc."
+      },
+      {
+        "numero": 3,
+        "asignatura": "Fundamentos Físicos de la Informática",
+        "descripcion": "Electricidad y magnetismo, leyes de Kirchhoff, ondas electromagnéticas, componentes electrónicos, etc."
+      },
+      {
+        "numero": 4,
+        "asignatura": "Sistemas Digitales",
+        "descripcion": "Diseño y análisis de circuitos digitales con sistemas de numeración, álgebra de Boole, puertas lógicas, circuitos combinacionales y secuenciales."
+      },
+      {
+        "numero": 5,
+        "asignatura": "Álgebra",
+        "descripcion": "Estudio de matrices, sistemas de ecuaciones, espacios vectoriales y transformaciones lineales aplicadas a la informática."
+      },
+      {
+        "numero": 6,
+        "asignatura": "Cálculo",
+        "descripcion": "Límites, derivadas, integrales y ecuaciones diferenciales aplicadas al análisis de funciones y modelado matemático."
+      },
+      {
+        "numero": 7,
+        "asignatura": "Programación Orientada a Objetos",
+        "descripcion": "Principios de la programación orientada a objetos en Java: clases, herencia, polimorfismo, encapsulamiento y manejo de excepciones."
+      },
+      {
+        "numero": 8,
+        "asignatura": "Estadística",
+        "descripcion": "Introducción a los principios básicos de la estadística, incluyendo probabilidad, distribuciones, inferencia estadística y técnicas de análisis de datos."
+      },
+      {
+        "numero": 9,
+        "asignatura": "Métodos Matemáticos para la Ingeniería",
+        "descripcion": "Aplicación de métodos matemáticos en problemas de ingeniería, centrado en ecuaciones diferenciales, álgebra lineal y transformadas."
+      },
+      {
+        "numero": 10,
+        "asignatura": "Organización y Gestión de Empresas",
+        "descripcion": "Estudio de la estructura organizacional, gestión de recursos humanos, marketing, finanzas y toma de decisiones dentro de las empresas."
+      },
+      {
+        "numero": 11,
+        "asignatura": "Diseño de Bases de Datos",
+        "descripcion": "Fundamentos en el diseño y modelado de bases de datos, incluyendo relaciones, normalización y consultas SQL."
+      },
+      {
+        "numero": 12,
+        "asignatura": "Ingeniería del Software I",
+        "descripcion": "Introducción a la ingeniería del software, enfoques de desarrollo, metodologías, y herramientas para crear software de calidad."
+      },
+      {
+        "numero": 13,
+        "asignatura": "Fundamentos de Sistemas de Información",
+        "descripcion": "Conceptos básicos sobre la creación, gestión y uso de sistemas de información en las organizaciones."
+      },
+      {
+        "numero": 14,
+        "asignatura": "Arquitectura de Bases de Datos",
+        "descripcion": "Estudio de la arquitectura de bases de datos, incluyendo diseño físico, optimización de consultas y sistemas de bases de datos distribuidas."
+      },
+      {
+        "numero": 15,
+        "asignatura": "Ingeniería del Software II",
+        "descripcion": "Continuación de la asignatura de ingeniería de software, enfocado en el ciclo de vida del software y las fases de desarrollo avanzadas."
+      },
+      {
+        "numero": 16,
+        "asignatura": "Sistemas Operativos",
+        "descripcion": "Estudio de los sistemas operativos, sus principios, gestión de recursos y seguridad en la ejecución de programas."
+      },
+      {
+        "numero": 17,
+        "asignatura": "Redes de Computadores",
+        "descripcion": "Fundamentos sobre redes de comunicación, protocolos, topologías y seguridad en redes."
+      },
+      {
+        "numero": 18,
+        "asignatura": "Algorítmica II",
+        "descripcion": "Algoritmos avanzados, análisis de la complejidad computacional y su optimización en problemas de gran escala."
+      },
+      {
+        "numero": 19,
+        "asignatura": "Algorítmica I",
+        "descripcion": "Introducción a los algoritmos y estructuras de datos fundamentales, como listas, pilas, colas y árboles."
+      },
+      {
+        "numero": 20,
+        "asignatura": "Estructuras de Datos",
+        "descripcion": "Estudio de estructuras de datos avanzadas, incluyendo árboles binarios, grafos y tablas hash."
+      },
+      {
+        "numero": 21,
+        "asignatura": "Mantenimiento de Bases de Datos",
+        "descripcion": "Técnicas y prácticas de mantenimiento, gestión de datos y optimización de bases de datos."
+      },
+      {
+        "numero": 22,
+        "asignatura": "Programación Avanzada",
+        "descripcion": "Estudio de técnicas de programación avanzadas en diversos lenguajes y entornos de desarrollo."
+      },
+      {
+        "numero": 23,
+        "asignatura": "Sistemas Distribuidos",
+        "descripcion": "Principios y tecnologías detrás de los sistemas distribuidos, sincronización y comunicación entre nodos."
+      },
+      {
+        "numero": 24,
+        "asignatura": "Tecnologías de Sistemas de Información",
+        "descripcion": "Exploración de tecnologías emergentes en el campo de los sistemas de información, incluyendo tecnologías web y móviles."
+      },
+      {
+        "numero": 25,
+        "asignatura": "Gestión de Procesos de Negocios",
+        "descripcion": "Modelado, gestión y optimización de los procesos empresariales y de negocios."
+      },
+      {
+        "numero": 26,
+        "asignatura": "Integración de Tecnologías",
+        "descripcion": "Enfoque sobre la integración de distintas tecnologías en un entorno empresarial, incluyendo sistemas ERP y CRM."
+      },
+      {
+        "numero": 27,
+        "asignatura": "Ingeniería de Proyectos",
+        "descripcion": "Principios y prácticas de la gestión de proyectos tecnológicos, con énfasis en planificación, presupuesto y riesgos."
+      },
+      {
+        "numero": 28,
+        "asignatura": "Seguridad",
+        "descripcion": "Fundamentos de la seguridad informática, incluyendo criptografía, firewalls y medidas de protección."
+      },
+      {
+        "numero": 29,
+        "asignatura": "Sistemas de Información en Tiempo Real",
+        "descripcion": "Estudio de sistemas que requieren procesamiento en tiempo real, como los sistemas embebidos."
+      },
+      {
+        "numero": 30,
+        "asignatura": "Bioinformática",
+        "descripcion": "Aplicación de la informática y las tecnologías de la información en el campo de la biología y la medicina."
+      },
+      {
+        "numero": 31,
+        "asignatura": "Inteligencia de Negocio",
+        "descripcion": "Técnicas de análisis de datos para la toma de decisiones empresariales y estrategias basadas en datos."
+      },
+      {
+        "numero": 32,
+        "asignatura": "Planificación de Proyectos",
+        "descripcion": "Enfoque sobre las técnicas y herramientas para planificar y gestionar proyectos tecnológicos de manera eficiente."
+      },
+      {
+        "numero": 33,
+        "asignatura": "Calidad",
+        "descripcion": "Estudio de los principios y normas de calidad en el desarrollo de software y en los sistemas de información."
+      },
+      {
+        "numero": 34,
+        "asignatura": "Inteligencia Artificial",
+        "descripcion": "Introducción a la inteligencia artificial, sus algoritmos y aplicaciones en la resolución de problemas complejos."
+      },
+      {
+        "numero": 35,
+        "asignatura": "Gestión de Sistemas de Información",
+        "descripcion": "Estrategias para gestionar eficazmente los sistemas de información dentro de las organizaciones."
+      },
+      {
+        "numero": 36,
+        "asignatura": "Auditoría de Sistemas de Información",
+        "descripcion": "Enfoque sobre la auditoría y control de los sistemas de información en una organización."
+      },
+      {
+        "numero": 37,
+        "asignatura": "Tecnologías Avanzadas de Desarrollo",
+        "descripcion": "Estudio de las últimas tecnologías y técnicas en el desarrollo de software avanzado."
+      },
+      {
+        "numero": 38,
+        "asignatura": "Creación de Empresas",
+        "descripcion": "Fundamentos sobre el emprendimiento y la creación de nuevas empresas tecnológicas."
+      },
+      {
+        "numero": 39,
+        "asignatura": "Trabajo Fin de Grado",
+        "descripcion": "Trabajo final de grado, que involucra la investigación y desarrollo de un proyecto integral relacionado con los temas estudiados a lo largo de la carrera."
+      }
+    ]
+  }
+  
