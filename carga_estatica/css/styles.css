@@ -2,11 +2,7 @@ h1 {
   margin: 0.5em 0;
 }
 
-h1,
-h2,
-h3,
-p,
-label {
+h1, h2, h3, p, label {
   color: var(--text-color);
 }
 
@@ -49,9 +45,8 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-i,
-span {
-  color: var(--text-color);
+i, span {
+  color: var(--text-color)
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -77,15 +72,12 @@ span {
   color: var(--background-color);
 }
 
-.card,
-.modal-content {
+.card, .modal-content {
   background-color: var(--card-background);
   border-color: var(--card-border);
 }
 
-.card-text,
-.card-title,
-.table {
+.card-text, .card-title, .table {
   color: var(--text-color);
 }
 
@@ -93,20 +85,20 @@ span {
 .table td {
   color: var(--text-color);
   border-color: var(--card-border);
-  background-color: var(--background-color);
+  background-color: var(--card-background);
 }
 
 .table thead th {
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--card-background);
 }
 
 .table tbody tr {
-  background-color: var(--background-color);
+  background-color: var(--card-background);
 }
 
 .table tbody tr:hover {
-  background-color: var(--background-color);
+  background-color: var(--card-background);
 }
 
 .alert-success {
