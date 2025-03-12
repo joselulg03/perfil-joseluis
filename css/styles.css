@@ -15,25 +15,25 @@ body {
 }
 
 :root {
-  --background-color: #f4f4f4; /* Fondo más suave */
-  --text-color: #333333; /* Mejor contraste para el texto */
-  --primary-color: #346799; /* Azul vibrante para acciones principales */
-  --secondary-color: #7c7c7c; /* Gris neutro para elementos secundarios */
-  --card-background: #e3e3e3; /* Fondo de tarjetas ligeramente más claro */
-  --card-border: #d0d0d0; /* Borde suave de tarjetas */
-  --link-color: #0066cc; /* Azul intenso para links */
-  --link-hover-color: #004d99; /* Azul más oscuro para el hover */
+  --background-color: #f4f4f4;
+  --text-color: #333333;
+  --primary-color: #346799;
+  --secondary-color: #7c7c7c;
+  --card-background: #e3e3e3;
+  --card-border: #d0d0d0;
+  --link-color: #0066cc;
+  --link-hover-color: #004d99;
 }
 
 [data-theme="dark"] {
-  --background-color: #121212; /* Fondo oscuro pero no completamente negro */
-  --text-color: #e0e0e0; /* Texto claro para facilitar la lectura */
-  --primary-color: #5b7a9f; /* Azul más apagado para el modo oscuro */
-  --secondary-color: #9e9e9e; /* Gris intermedio para balance */
-  --card-background: #333333; /* Fondo de tarjetas oscuro */
-  --card-border: #444444; /* Borde de tarjetas un poco más oscuro */
-  --link-color: #4d8dcb; /* Azul suave para enlaces */
-  --link-hover-color: #3b7ca5; /* Azul aún más oscuro para hover */
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #5b7a9f;
+  --secondary-color: #9e9e9e;
+  --card-background: #333333;
+  --card-border: #444444;
+  --link-color: #4d8dcb;
+  --link-hover-color: #3b7ca5;
 }
 
 body {
